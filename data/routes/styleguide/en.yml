@@ -21,6 +21,8 @@ placeholders:
               heading: Single-Line Text
               sample: This is a sample text field. <mark>HTML is encoded.</mark> In Sitecore, editors will see a <input type="text">.
               sample2: This is another sample text field using rendering options. <mark>HTML supported with encode=false.</mark> Cannot edit because editable=false.
+          - componentName: Diff-Panel
+            fields:
           - componentName: Styleguide-FieldUsage-Text
             fields:
               heading: Multi-Line Text
