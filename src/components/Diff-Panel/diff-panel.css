@@ -16,7 +16,7 @@
   width: 100%;
   display: flex;
   flex-grow: 1;
-  max-width: 347px;
+  max-width: 369px;
   box-sizing: border-box;
   flex-basis: 0;
   align-items: center;
@@ -48,11 +48,11 @@
 .diff-panel-paragraph {
   width: 100%;
   border: 1px dashed rgb(187, 187, 187);
-  height: 255px;
+  height: 237px;
   display: flex;
   overflow: hidden;
   font-size: 0.8em;
-  max-width: 346px;
+  max-width: 369px;
   min-width: 20px;
   margin-top: 15px;
   max-height: 100%;
@@ -106,4 +106,9 @@
   flex-direction: column;
   justify-content: center;
   background-color: #d9d9d9;
+}
+@media(max-width: 320px) {
+  .diff-panel-container {
+    flex-direction: row;
+  }
 }

@@ -10,7 +10,10 @@ const DiffPanel = (props) => {
     <div className="diff-panel-container">
       <div className="diff-panel-container1">
         <Header field={props.fields.header_0} className="diff-panel-header"></Header>
-        <Paragraph className="diff-panel-paragraph"></Paragraph>
+        <Paragraph
+          field={props.fields.paragraph_1627061563664}
+          className="diff-panel-paragraph"
+        ></Paragraph>
         <Button field={props.fields.button_1} className="diff-panel-button"></Button>
       </div>
       <Image field={props.fields.image_3} className="diff-panel-image"></Image>
@@ -23,6 +26,7 @@ DiffPanel.defaultProps = {
   fields: {},
   'fields.button_1': 'text',
   'fields.image_3': 'src',
+  'fields.paragraph_1627061563664': 'text',
 }
 
 DiffPanel.propTypes = {
@@ -30,6 +34,7 @@ DiffPanel.propTypes = {
   fields: PropTypes.object,
   'fields.button_1': PropTypes.string,
   'fields.image_3': PropTypes.object,
+  'fields.paragraph_1627061563664': PropTypes.string,
 }
 
 export default DiffPanel

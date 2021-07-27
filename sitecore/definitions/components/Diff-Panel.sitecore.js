@@ -13,6 +13,9 @@ export default function (manifest) {
     }, {
       name: "image_3",
       type: CommonFieldTypes.Image
+    }, {
+      name: "paragraph_1627061563664",
+      type: CommonFieldTypes.SingleLineText
     }]
   });
 }
