@@ -21,10 +21,24 @@ placeholders:
               heading: Single-Line Text
               sample: This is a sample text field. <mark>HTML is encoded.</mark> In Sitecore, editors will see a <input type="text">.
               sample2: This is another sample text field using rendering options. <mark>HTML supported with encode=false.</mark> Cannot edit because editable=false.
-          - componentName: Diff-Panel
+          #TEST COMPONENT TEST TEST
+          - componentName: Diff-panel newtest
             fields:
               header_0: Header Text Test
               button_1: PLEASE CLICK ME!
+              image_3:
+                src: /data/media/img/sc_logo.png
+                alt: Sitecore Logo
+              text_4: Here we see the paragraph element actually working!
+          #Hero Banner test
+          - componentName: Hero-Banner Test
+            fields:
+              image_1630513440790:
+                src: /data/media/img/sc_logo.png
+                alt: Sitecore Logo
+              header_1630514029029: Header text test
+              paragraph_1630514047980: Here is some text for the hero banner, hopefully this works without having to meddle too much
+              button_1630514059359: Button Text!
           - componentName: Styleguide-FieldUsage-Text
             fields:
               heading: Multi-Line Text

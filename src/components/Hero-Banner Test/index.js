@@ -15,7 +15,7 @@ const HeroBannerTest = (props) => {
             className="hero-banner-test-header"
           ></Header>
           <Paragraph
-            field={props.fields.paragraph_1630514047980}
+            field={props.fields.paragraph_1630514047980} 
             className="hero-banner-test-paragraph"
           ></Paragraph>
           <Button
