@@ -1,8 +1,8 @@
 /* eslint-disable */
 import React from 'react'
-import { Header, Paragraph, Button} from '../../lib/bundle_sitecore.js' /* , Image */
+import { Header, Paragraph, Button, Image} from '../../lib/bundle_sitecore.js' /* , Image */
 import PropTypes from 'prop-types'
-import { Text, Image } from '@sitecore-jss/sitecore-jss-react';
+import { Text } from '@sitecore-jss/sitecore-jss-react';
 
 import './diff-panel.css'
 
