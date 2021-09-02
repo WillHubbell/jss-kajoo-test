@@ -138,4 +138,7 @@
   .diff-panelnewtest-container1 {
     flex-direction: row;
   }
+  .diff-panelnewtest-container2 {
+    flex-direction: row;
+  }
 }
