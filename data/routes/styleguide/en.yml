@@ -29,7 +29,6 @@ placeholders:
               image_3:
                 src: /data/media/img/sc_logo.png
                 alt: Sitecore Logo
-              text_4: Here we see the paragraph element actually working!
           #Hero Banner test
           - componentName: Hero-Banner Test
             fields:
