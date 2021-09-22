@@ -1,0 +1,103 @@
+/* eslint-disable */
+.diff-panel-three-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.diff-panel-three-container1 {
+  width: 100px;
+  border: 1px dashed rgb(187, 187, 187);
+  height: 75px;
+  display: flex;
+  flex-grow: 1;
+  min-width: 30px;
+  flex-basis: 0;
+  padding-top: 20px;
+  padding-left: 20px;
+  border-radius: 3px;
+  padding-right: 20px;
+  flex-direction: row;
+  padding-bottom: 20px;
+  background-color: #FFFFFF00;
+}
+.diff-panel-three-header {
+  color: rgba(193, 107, 107, 1);
+  width: 100px;
+  border: 1px dashed rgb(187, 187, 187);
+  height: 75px;
+  margin: unset unset unset unset;
+  display: flex;
+  font-size: larger;
+  min-width: 30px;
+  max-height: 100%;
+  min-height: 1px;
+  align-items: center;
+  border-radius: 3px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(194, 84, 84, 0);
+  -webkit-user-drag: none;
+}
+.diff-panel-three-paragraph {
+  width: 100px;
+  border: 1px dashed rgb(187, 187, 187);
+  height: 75px;
+  display: flex;
+  overflow: hidden;
+  font-size: 0.8em;
+  min-width: 30px;
+  max-height: 100%;
+  align-items: left;
+  padding-left: 3px;
+  border-radius: 5px;
+  flex-direction: column;
+  background-color: #FFFFFF00;
+  -webkit-user-drag: none;
+}
+.diff-panel-three-button {
+  width: 100px;
+  border: 1px solid #666666;
+  height: 75px;
+  display: flex;
+  font-size: 0.8em;
+  min-width: 30px;
+  max-height: 100%;
+  align-items: center;
+  border-color: rgba(210, 69, 69, 1);
+  border-width: 1px;
+  border-radius: 3px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #d9d9d9;
+  -webkit-user-drag: none;
+}
+.diff-panel-three-container2 {
+  width: 100px;
+  border: 1px dashed rgb(187, 187, 187);
+  height: 75px;
+  display: flex;
+  flex-grow: 1;
+  min-width: 30px;
+  flex-basis: 0;
+  padding-top: 20px;
+  padding-left: 20px;
+  border-radius: 3px;
+  padding-right: 20px;
+  flex-direction: row;
+  padding-bottom: 20px;
+  background-color: #FFFFFF00;
+}
+.diff-panel-three-image {
+  width: 90%;
+  border: 1px solid #666666;
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  min-width: 30px;
+  max-height: 100%;
+  align-items: center;
+  border-radius: 3px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #d9d9d9;
+}
