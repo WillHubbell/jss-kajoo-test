@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React from 'react'
-import { Header, Paragraph, Button, Image } from '../../lib/bundle_sitecore.js'
+import { Header, Paragraph, Link, Image } from '../../lib/bundle_sitecore.js'
 import PropTypes from 'prop-types'
 
 import './diff-panel-three.css'
@@ -11,11 +11,11 @@ const DiffPanelThree = (props) => {
       <div className="diff-panel-three-container1">
         <Header text={props.fields.text_string_0} className="diff-panel-three-header"></Header>
         <Paragraph className="diff-panel-three-paragraph"></Paragraph>
-        <Button
+        <Link
           text={props.fields.text_string_1}
           link={props.fields.link_link_1}
-          className="diff-panel-three-button"
-        ></Button>
+          className="diff-panel-three-link"
+        ></Link>
       </div>
       <div className="diff-panel-three-container2">
         <Image src={props.fields.src_object_3} className="diff-panel-three-image"></Image>
