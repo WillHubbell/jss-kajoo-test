@@ -16,6 +16,21 @@ export default function (manifest) {
     }, {
       name: "src_object_3",
       type: CommonFieldTypes.Image
+    }, {
+      name: "text_string_1632330596104",
+      type: CommonFieldTypes.SingleLineText
+    }, {
+      name: "list_list_1632330659163",
+      type: CommonFieldTypes.ContentList
+    }, {
+      name: "src_object_1632331042506",
+      type: CommonFieldTypes.ItemLink
+    }, {
+      name: "list_list_1632331356799",
+      type: CommonFieldTypes.ContentList
+    }, {
+      name: "text_string_1632331356799",
+      type: CommonFieldTypes.SingleLineText
     }]
   });
 }
