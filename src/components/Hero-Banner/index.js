@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React from 'react'
-import { Container, Header, Textarea, Link } from '../../lib/bundle_sitecore.js'
+import { Container, Header, Paragraph, Link } from '../../lib/bundle_sitecore.js'
 import PropTypes from 'prop-types'
 
 import './hero-banner.css'
@@ -16,7 +16,7 @@ const HeroBanner = (props) => {
           text={props.fields.text_string_1632762602924}
           className="hero-banner-header"
         ></Header>
-        <Textarea className="hero-banner-textarea"></Textarea>
+        <Paragraph className="hero-banner-paragraph"></Paragraph>
         <Link href={props.fields.href_object_1632762638631} className="hero-banner-link"></Link>
       </Container>
     </Container>
