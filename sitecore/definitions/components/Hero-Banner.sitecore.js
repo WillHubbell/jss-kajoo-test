@@ -5,9 +5,6 @@ export default function (manifest) {
     name: "Hero-Banner",
     icon: SitecoreIcon.DocumentTag,
     fields: [{
-      name: "bgImage_object_1632758602537",
-      type: CommonFieldTypes.Image
-    }, {
       name: "bgImage_object_1632758615916",
       type: CommonFieldTypes.Image
     }, {

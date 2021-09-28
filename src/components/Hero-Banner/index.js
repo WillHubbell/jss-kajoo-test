@@ -24,18 +24,16 @@ const HeroBanner = (props) => {
 }
 
 HeroBanner.defaultProps = {
-  'fields.bgImage_object_1632758602537': 'bgImage',
-  fields: {},
   'fields.bgImage_object_1632758615916': 'bgImage',
+  fields: {},
   'fields.bgImage_object_1632762558520': 'bgImage',
   'fields.text_string_1632762602924': 'text',
   'fields.href_object_1632762638631': 'href',
 }
 
 HeroBanner.propTypes = {
-  'fields.bgImage_object_1632758602537': PropTypes.object,
-  fields: PropTypes.object,
   'fields.bgImage_object_1632758615916': PropTypes.object,
+  fields: PropTypes.object,
   'fields.bgImage_object_1632762558520': PropTypes.object,
   'fields.text_string_1632762602924': PropTypes.string,
   'fields.href_object_1632762638631': PropTypes.object,
