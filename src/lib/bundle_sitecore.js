@@ -1,546 +1,369 @@
+// prettier-ignore
 /* eslint-disable */
-import React from "react";
+import "./bundle_sitecore.css"
 
-import {
-  Image,
-  Link,
-  Text as Text$1,
-} from "@sitecore-jss/sitecore-jss-react";
+import React from 'react';
+import { Link as Link$1, Text as Text$1, Image as Image$1, isExperienceEditorActive } from '@sitecore-jss/sitecore-jss-react';
+import { PopupButton, Sidetab, Widget, SliderButton } from '@typeform/embed-react';
 
-var style$h = {
-  alignItems: "center",
-  flexDirection: "column",
-  justifyContent: "center",
-  display: "flex",
-  maxHeight: "100%",
-  fontSize: "0.8em",
-  borderRadius: "3px",
-  WebkitUserDrag: "none",
-  borderRadius: "3px",
-  border: "1px solid #666666",
-  backgroundColor: "#d9d9d9",
-};
-const react$j = (props) => {
-  return React.createElement(
-    "button",
-    {
-      style: style$h,
-      className: props.className,
-    },
-    React.createElement(Text$1, {
-      field: props.field,
-    })
-  );
-};
+function ownKeys(object, enumerableOnly) {
+  var keys = Object.keys(object);
 
-const style$g = {
-  alignItems: "center",
-  flexDirection: "column",
-  justifyContent: "center",
-  display: "flex",
-  border: "1px dashed rgb(187, 187, 187)",
-  backgroundColor: "#FFFFFF00",
-};
-const react$i = (props) => {
-  return React.createElement(
-    "div",
-    {
-      style: style$g,
-      className: props.className,
-    },
-    React.createElement("input", {
-      type: "checkbox",
-      checked: "true",
-    })
-  );
-};
+  if (Object.getOwnPropertySymbols) {
+    var symbols = Object.getOwnPropertySymbols(object);
 
-const react$h = (props) => {
-  return React.createElement("div", {
-    style: props.style,
-  });
-};
+    if (enumerableOnly) {
+      symbols = symbols.filter(function (sym) {
+        return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+      });
+    }
 
-const style$f = {
-  alignItems: "center",
-  flexDirection: "column",
-  justifyContent: "center",
-  display: "flex",
-  maxHeight: "100%",
-  border: "1px dashed rgb(187, 187, 187)",
-  backgroundColor: "#FFFFFF00",
-  borderRadius: "3px",
-  WebkitUserDrag: "none",
-  fontSize: "larger",
-};
-const react$g = (props) => {
-  return React.createElement("div", {
-    className: props.className,
-    style: style$f,
-  });
-};
+    keys.push.apply(keys, symbols);
+  }
 
-const style$e = {
-  alignItems: "center",
-  flexDirection: "column",
-  justifyContent: "center",
-  display: "flex",
-  maxHeight: "100%",
-  border: "1px dashed rgb(187, 187, 187)",
-  backgroundColor: "#FFFFFF00",
-  borderRadius: "3px",
-  WebkitUserDrag: "none",
-  fontSize: "larger",
-};
-const react$f = (props) => {
-  return React.createElement(
-    "div",
-    {
-      style: style$e,
-      className: props.className,
-    },
-    React.createElement(Text$1, {
-      field: props.field,
-      tag: "h2",
-    })
-  );
-};
+  return keys;
+}
 
-const style$d = {
-  innerStyle: {
-    WebkitUserDrag: "none",
-  },
-  alignItems: "center",
-  flexDirection: "column",
-  justifyContent: "center",
-  display: "flex",
-  maxHeight: "100%",
-  overflow: "hidden",
-  borderRadius: "3px",
-  border: "1px dashed rgb(187, 187, 187)",
-  backgroundColor: "#FFFFFF00",
-};
-const react$e = (props) => {
-  return React.createElement("div", {
-    className: props.className,
-    style: style$d,
-  });
-};
+function _objectSpread2(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i] != null ? arguments[i] : {};
 
-const react$d = (props) => {
-  const style = {
-    innerStyle: {
-      WebkitUserDrag: "none",
-    },
-    alignItems: "center",
-    flexDirection: "column",
-    justifyContent: "center",
-    display: "flex",
-    maxHeight: "100%",
-    overflow: "hidden",
-    borderRadius: "3px",
-    border: "1px solid #666666",
-    backgroundColor: "#d9d9d9",
+    if (i % 2) {
+      ownKeys(Object(source), true).forEach(function (key) {
+        _defineProperty(target, key, source[key]);
+      });
+    } else if (Object.getOwnPropertyDescriptors) {
+      Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+    } else {
+      ownKeys(Object(source)).forEach(function (key) {
+        Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+      });
+    }
+  }
+
+  return target;
+}
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+function _extends() {
+  _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
   };
-  return React.createElement(
-    "div",
-    {
-      style: style,
-      className: props.className,
-    },
-    React.createElement(Image, {
-      media: props.media,
-      style: style.innerStyle,
-    })
-  );
+
+  return _extends.apply(this, arguments);
+}
+
+function _objectWithoutPropertiesLoose(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
+  }
+
+  return target;
+}
+
+function _objectWithoutProperties(source, excluded) {
+  if (source == null) return {};
+
+  var target = _objectWithoutPropertiesLoose(source, excluded);
+
+  var key, i;
+
+  if (Object.getOwnPropertySymbols) {
+    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+
+    for (i = 0; i < sourceSymbolKeys.length; i++) {
+      key = sourceSymbolKeys[i];
+      if (excluded.indexOf(key) >= 0) continue;
+      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+      target[key] = source[key];
+    }
+  }
+
+  return target;
+}
+
+var _excluded$9 = ["text", "link"];
+
+var Button = function Button(_ref) {
+  var text = _ref.text,
+      link = _ref.link,
+      rest = _objectWithoutProperties(_ref, _excluded$9);
+
+  return link ? /*#__PURE__*/React.createElement(Link$1, _extends({
+    field: link
+  }, rest), /*#__PURE__*/React.createElement(Text$1, {
+    field: text
+  })) : /*#__PURE__*/React.createElement("button", rest, /*#__PURE__*/React.createElement(Text$1, {
+    field: text
+  }));
 };
 
-const style$c = {
-  flexDirection: "column",
-  justifyContent: "center",
-  display: "flex",
-  maxHeight: "100%",
-  overflow: "hidden",
-  borderRadius: "3px",
-  WebkitUserDrag: "none",
-  fontSize: "0.8em",
-  alignItems: "left",
-  paddingLeft: "5px",
-  border: "1px dashed rgb(187, 187, 187)",
-  backgroundColor: "#FFFFFF00",
-  alignSelf: "flex-start",
-};
-const react$c = (props, styles, uid) => {
-  return React.createElement(
-    "div",
-    {
-      style: style$c,
-      className: props.className,
-    },
-    React.createElement(Link, {
-      field: props.fields,
-    })
-  );
+var react$3 = function react(props) {
+  return /*#__PURE__*/React.createElement('div', {
+    className: props.className
+  }, [/*#__PURE__*/React.createElement('input', {
+    type: 'checkbox',
+    checked: 'true'
+  })]);
 };
 
-const style$b = {
-  alignItems: "center",
-  flexDirection: "column",
-  justifyContent: "center",
-  display: "flex",
-  border: "1px dashed rgb(187, 187, 187)",
-  backgroundColor: "#FFFFFF00",
-};
-const react$b = (props) => {
-  return React.createElement(
-    "div",
-    {
-      className: props.className,
-      style: style$b,
-    },
-    React.createElement("input", {
-      type: "radio",
-      name: "radio",
-    })
-  );
+var _excluded$8 = ["bgImage", "style", "children"];
+
+var Container = function Container(_ref) {
+  var _bgImage$value;
+
+  var bgImage = _ref.bgImage,
+      _ref$style = _ref.style,
+      style = _ref$style === void 0 ? {} : _ref$style,
+      children = _ref.children,
+      rest = _objectWithoutProperties(_ref, _excluded$8);
+
+  var backgroundImage = bgImage === null || bgImage === void 0 ? void 0 : (_bgImage$value = bgImage.value) === null || _bgImage$value === void 0 ? void 0 : _bgImage$value.url;
+  var containerStyle = backgroundImage ? _objectSpread2(_objectSpread2({}, style), {}, {
+    backgroundImage: "url(".concat(backgroundImage, ")")
+  }) : style;
+  return /*#__PURE__*/React.createElement("div", _extends({
+    style: containerStyle
+  }, rest), children);
 };
 
-const style$a = {
-  fontSize: "0.8em",
-  overflow: "hidden",
-  flexDirection: "column",
-  justifyContent: "center",
-  display: "flex",
-  maxHeight: "100%",
-  overflow: "hidden",
-  borderRadius: "3px",
-  WebkitUserDrag: "none",
-  alignItems: "left",
-  paddingLeft: "5px",
-  border: "1px dashed rgb(187, 187, 187)",
-  backgroundColor: "#FFFFFF00",
+var _excluded$7 = ["text"];
+
+var Text = function Text(_ref) {
+  var text = _ref.text,
+      rest = _objectWithoutProperties(_ref, _excluded$7);
+
+  return /*#__PURE__*/React.createElement(Text$1, _extends({
+    field: text,
+    tag: "h2"
+  }, rest));
 };
-const react$a = (props) => {
-  return React.createElement(
-    "div",
-    {
-      style: style$a,
-      className: props.className,
-    },
-    React.createElement(Text$1, {
-      field: props.field,
+
+var s$1 = {"switch":"toggle-module_switch__B8qKv","input":"toggle-module_input__GtF5A","slider":"toggle-module_slider__12m_6","round":"toggle-module_round__1rQsv"};
+
+var react$2 = function react(props) {
+  return /*#__PURE__*/React.createElement("label", {
+    className: "".concat(props.className, " ").concat(s$1["switch"])
+  }, /*#__PURE__*/React.createElement("input", {
+    type: "checkbox",
+    className: s$1.input
+  }), /*#__PURE__*/React.createElement("span", {
+    className: "".concat(props.slider, " ").concat(s$1.round)
+  }));
+};
+
+var _excluded$6 = ["src"];
+
+var Image = function Image(_ref) {
+  var src = _ref.src,
+      rest = _objectWithoutProperties(_ref, _excluded$6);
+
+  return /*#__PURE__*/React.createElement(Image$1, _extends({
+    field: src
+  }, rest));
+};
+
+var _excluded$5 = ["href"];
+
+var Link = function Link(_ref) {
+  var href = _ref.href,
+      rest = _objectWithoutProperties(_ref, _excluded$5);
+
+  return /*#__PURE__*/React.createElement(Link$1, _extends({
+    field: href
+  }, rest));
+};
+
+var react$1 = function react(props) {
+  return /*#__PURE__*/React.createElement('div', {
+    className: props.className
+  }, [/*#__PURE__*/React.createElement('input', {
+    type: 'radio',
+    name: 'radio'
+  })]);
+};
+
+var _excluded$4 = ["text"];
+
+var Label = function Label(_ref) {
+  var text = _ref.text,
+      rest = _objectWithoutProperties(_ref, _excluded$4);
+
+  return /*#__PURE__*/React.createElement(Text$1, _extends({
+    field: text,
+    tag: "label"
+  }, rest));
+};
+
+var TextArea = function TextArea(props) {
+  return /*#__PURE__*/React.createElement("textarea", props);
+};
+
+var TextInput = function TextInput(props) {
+  return /*#__PURE__*/React.createElement("input", _extends({
+    type: "text"
+  }, props));
+};
+
+var _excluded$3 = ["src"];
+
+var Video = function Video(_ref) {
+  var src = _ref.src,
+      rest = _objectWithoutProperties(_ref, _excluded$3);
+
+  return /*#__PURE__*/React.createElement("video", _extends({
+    controls: true
+  }, rest), /*#__PURE__*/React.createElement("source", {
+    src: src === null || src === void 0 ? void 0 : src.url
+  }));
+};
+
+var LineBreak = function LineBreak(props) {
+  return /*#__PURE__*/React.createElement("hr", props);
+};
+
+var _excluded$2 = ["tag", "text"];
+
+var Paragraph = function Paragraph(_ref) {
+  var tag = _ref.tag,
+      text = _ref.text,
+      rest = _objectWithoutProperties(_ref, _excluded$2);
+
+  return /*#__PURE__*/React.createElement(Text$1, _extends({
+    tag: tag || 'p',
+    field: text
+  }, rest));
+};
+
+var s = {"dropbtn":"dropdown-module_dropbtn__3zFAg","dropdown":"dropdown-module_dropdown__33CIU","dropdownContent":"dropdown-module_dropdownContent__1iX_q"};
+
+var react = function react(props) {
+  return /*#__PURE__*/React.createElement('div', {
+    className: "".concat(props.className, " ").concat(s.dropdown)
+  }, [/*#__PURE__*/React.createElement('button', {
+    className: s.dropbtn,
+    style: {
+      width: '100%',
+      height: '100%'
+    }
+  }, [Text$1({
+    field: props.text,
+    editable: true,
+    encode: true
+  })]), /*#__PURE__*/React.createElement('div', {
+    className: s.dropdownContent
+  }, [/*#__PURE__*/React.createElement('div', null, [props.list && props.list.map(function (item, index) {
+    return /*#__PURE__*/React.createElement('div', {
+      key: 'listItem-' + index
+    }, [/*#__PURE__*/React.createElement('span', null, [item.name])]);
+  })])])]);
+};
+
+var _excluded$1 = ["list"];
+
+var List = function List(_ref) {
+  var list = _ref.list,
+      rest = _objectWithoutProperties(_ref, _excluded$1);
+
+  if (!list) return null;
+  return /*#__PURE__*/React.createElement("ul", rest, list === null || list === void 0 ? void 0 : list.map(function (listItem, index) {
+    return /*#__PURE__*/React.createElement("li", {
+      key: "listItem-".concat(index)
+    }, /*#__PURE__*/React.createElement("span", null, listItem.name || listItem.displayName));
+  }));
+};
+
+var Styles = {"errorContainer":"typeForm-module_errorContainer__3Gc5b","errorMessage":"typeForm-module_errorMessage__2VqC8","modeContainer":"typeForm-module_modeContainer__TUV-7","mode":"typeForm-module_mode__2Hyhq"};
+
+var _excluded = ["formId", "mode", "buttonText"];
+var validModes = ['popupButton', 'sliderButton', 'widget', 'popover'];
+
+var TypeForm = function TypeForm(props) {
+  var formId = props.formId,
+      _props$mode = props.mode,
+      mode = _props$mode === void 0 ? {} : _props$mode,
+      buttonText = props.buttonText,
+      rest = _objectWithoutProperties(props, _excluded);
+
+  var modeValue = mode.value;
+  var isValidMode = validModes.includes(modeValue);
+
+  if (!isValidMode && isExperienceEditorActive()) {
+    return /*#__PURE__*/React.createElement("div", {
+      className: Styles.errorContainer
+    }, /*#__PURE__*/React.createElement("div", {
+      className: Styles.errorMessage
+    }, /*#__PURE__*/React.createElement("p", null, "Please enter a valid mode for type form and click on save."), /*#__PURE__*/React.createElement("p", null, "Type one of \"".concat(validModes.join('", "'), "\""))), /*#__PURE__*/React.createElement("p", {
+      className: Styles.modeContainer
+    }, "mode: ", /*#__PURE__*/React.createElement(Text$1, {
+      field: mode,
       tag: "span",
-    })
-  );
+      className: Styles.mode
+    })));
+  }
+
+  if (modeValue === 'popupButton') {
+    return /*#__PURE__*/React.createElement(PopupButton, _extends({
+      id: formId
+    }, rest), /*#__PURE__*/React.createElement(Text$1, {
+      field: buttonText || 'click to open'
+    }));
+  }
+
+  if (modeValue === 'popover') {
+    return /*#__PURE__*/React.createElement(Sidetab, _extends({
+      id: formId
+    }, rest, {
+      buttonText: (buttonText === null || buttonText === void 0 ? void 0 : buttonText.value) || 'click to open'
+    }));
+  }
+
+  if (modeValue === 'widget') {
+    return /*#__PURE__*/React.createElement(Widget, _extends({
+      id: formId
+    }, rest));
+  }
+
+  if (modeValue === 'sliderButton') {
+    return /*#__PURE__*/React.createElement(SliderButton, _extends({
+      id: formId
+    }, rest), /*#__PURE__*/React.createElement(Text$1, {
+      field: buttonText || 'click to open'
+    }));
+  }
+
+  return null;
 };
 
-const style$9 = {
-  fontSize: "0.8em",
-  alignItems: "left",
-  paddingLeft: "5px",
-  border: "1px dashed rgb(187, 187, 187)",
-  backgroundColor: "#FFFFFF00",
-};
-const react$9 = (props) => {
-  return React.createElement("textarea", {
-    className: props.className,
-    value: "Text area",
-    style: style$9,
-  });
-};
-
-const style$8 = {
-  border: "1px solid rgb(187, 187, 187)",
-  backgroundColor: "#FFFFFF00",
-  fontSize: "0.8em",
-  alignItems: "left",
-  paddingLeft: "5px",
-};
-const react$8 = (props) => {
-  return React.createElement("input", {
-    className: props.className,
-    type: "text",
-    value: "Text Input",
-    style: style$8,
-  });
-};
-
-const style$7 = {
-  innerStyle: {},
-  alignItems: "center",
-  flexDirection: "column",
-  justifyContent: "center",
-  display: "flex",
-  maxHeight: "100%",
-  overflow: "hidden",
-  borderRadius: "5px",
-  border: "1px solid #666666",
-  backgroundColor: "#d9d9d9",
-  WebkitUserDrag: "none",
-};
-const react$7 = (props) => {
-  return React.createElement("div", {
-    className: props.className,
-    style: style$7,
-  });
-};
-
-const style$6 = {
-  alignItems: "center",
-  flexDirection: "column",
-  justifyContent: "center",
-  display: "flex",
-  border: "1px dashed rgb(187, 187, 187)",
-  backgroundColor: "#FFFFFF00",
-};
-const react$6 = (props) => {
-  return React.createElement(
-    "div",
-    {
-      style: style$6,
-      className: props.className,
-    },
-    React.createElement("hr", {
-      style: {
-        width: "100%",
-      },
-    })
-  );
-};
-
-const style$5 = {
-  innerStyle: {
-    WebkitUserDrag: "none",
-  },
-  overflow: "hidden",
-  borderRadius: "3px",
-  border: "1px solid #666666",
-  backgroundColor: "#d9d9d9",
-};
-const react$5 = (props) => {
-  return React.createElement(
-    "div",
-    {
-      className: props.className,
-      style: style$5,
-    },
-    " "
-  );
-};
-
-const style$4 = {
-  display: "flex",
-  maxHeight: "100%",
-  border: "1px dashed rgb(187, 187, 187)",
-  backgroundColor: "#FFFFFF00",
-  borderRadius: "3px",
-  WebkitUserDrag: "none",
-  fontSize: "larger",
-};
-const react$4 = (props) => {
-  const bgcolor = "orange";
-  const completed = 45;
-  const containerStyles = {
-    height: 20,
-    width: "100%",
-    backgroundColor: "#e0e0de",
-    borderRadius: 50,
-    margin: 50,
-  };
-  const fillerStyles = {
-    height: "100%",
-    width: `${completed}%`,
-    backgroundColor: bgcolor,
-    borderRadius: "inherit",
-    textAlign: "right",
-  };
-  const labelStyles = {
-    padding: 5,
-    color: "white",
-    fontWeight: "bold",
-  };
-  return React.createElement(
-    "div",
-    {
-      className: props.className,
-      style: { ...style$4, containerStyles },
-    },
-    React.createElement(
-      "div",
-      {
-        style: fillerStyles,
-      },
-      React.createElement(
-        "span",
-        {
-          style: labelStyles,
-        },
-        `${completed}%`
-      )
-    )
-  );
-};
-
-const style$3 = {
-  overflow: "hidden",
-  fontSize: "0.8em",
-  flexDirection: "column",
-  display: "flex",
-  maxHeight: "100%",
-  overflow: "hidden",
-  borderRadius: "5px",
-  WebkitUserDrag: "none",
-  alignItems: "left",
-  paddingLeft: "3px",
-  border: "1px dashed rgb(187, 187, 187)",
-  backgroundColor: "#FFFFFF00",
-};
-const react$3 = (props) => {
-  return React.createElement(
-    "div",
-    {
-      style: style$3,
-      className: props.className,
-    },
-    React.createElement(Text$1, {
-      field: props.field,
-      tag: "p",
-    })
-  );
-};
-
-const style$2 = {
-  padding: "0px",
-  alignItems: "center",
-  flexDirection: "column",
-  justifyContent: "center",
-  display: "flex",
-  maxHeight: "100%",
-  overflow: "hidden",
-  WebkitUserDrag: "none",
-  borderRadius: "3px",
-  border: "1px dashed rgb(187, 187, 187)",
-  backgroundColor: "#FFFFFF00",
-};
-const react$2 = (props) => {
-  return React.createElement(
-    "div",
-    {
-      style: style$2,
-      className: props.className,
-    },
-    React.createElement("input", {
-      style: {
-        padding: "0px",
-      },
-      type: "range",
-      min: "1",
-      max: "100",
-      value: "50",
-      class: "slider",
-      id: "myRange",
-    })
-  );
-};
-
-const style$1 = {
-  alignItems: "center",
-  display: "flex",
-  borderRadius: "3px",
-  border: "1px solid #666666",
-  backgroundColor: "#d9d9d9",
-};
-const react$1 = (props) => {
-  return React.createElement(
-    "div",
-    {
-      style: style$1,
-      className: props.className,
-    },
-    React.createElement(
-      "select",
-      {
-        style: {
-          ...style$1,
-          marginRight: "10px",
-          position: "relative",
-          left: "-1px",
-        },
-      },
-      React.createElement(
-        "option",
-        {
-          value: "Dropdown",
-        },
-        "Dropdown"
-      )
-    ),
-    React.createElement(
-      "i",
-      {
-        style: {
-          border: "solid #666666",
-          width: "5px",
-          borderWidth: "0 3 3 0",
-          display: "inline-block",
-          padding: "3px",
-          marginRight: "20px",
-          transform: "rotate(45deg)",
-          WebkitTransform: "rotate(45deg)",
-        },
-      },
-      "  "
-    )
-  );
-};
-
-const style = {
-  flexDirection: "column",
-  justifyContent: "center",
-  display: "flex",
-  maxHeight: "100%",
-  overflow: "hidden",
-  fontSize: "0.8em",
-  borderRadius: "3px",
-  WebkitUserDrag: "none",
-  alignItems: "left",
-  paddingLeft: "5px",
-  border: "1px dashed rgb(187, 187, 187)",
-  backgroundColor: "#FFFFFF00",
-};
-const react = (props) => {
-  return React.createElement(
-    "ul",
-    {
-      style: style,
-      className: props.className,
-    },
-    React.createElement(Text, {
-      field: props.field,
-      tag: "li",
-    })
-  );
-};
-
-export {
-  react as List,
-  react$1 as Dropdown,
-  react$2 as Slider,
-  react$3 as Paragraph,
-  react$4 as Progressbar,
-  react$5 as Datepicker,
-  react$6 as Linebreak,
-  react$7 as Video,
-  react$8 as Textinput,
-  react$9 as Textarea,
-  react$a as Label,
-  react$b as Radiobutton,
-  react$c as Link,
-  react$d as Image,
-  react$e as Toggle,
-  react$f as Header,
-  react$g as Rating,
-  react$h as Container,
-  react$i as Checkbox,
-  react$j as Button,
-};
+export { Button, react$3 as Checkbox, Container, react as Dropdown, Text as Header, Image, Label, LineBreak as Linebreak, Link, List, Paragraph, react$1 as Radiobutton, TextArea as Textarea, TextInput as Textinput, react$2 as Toggle, TypeForm, Video };
