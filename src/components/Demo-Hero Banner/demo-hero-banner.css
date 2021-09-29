@@ -1,0 +1,60 @@
+/* eslint-disable */
+.demo-hero-banner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.demo-hero-banner-container1 {
+  width: 124px;
+  height: 75px;
+  display: flex;
+  align-self: flex-start;
+}
+.demo-hero-banner-container2 {
+  width: 124px;
+  height: 75px;
+  display: flex;
+  align-self: flex-start;
+}
+.demo-hero-banner-container3 {
+  width: 779px;
+  height: 436px;
+  display: flex;
+  align-self: flex-end;
+}
+.demo-hero-banner-container4 {
+  width: 533px;
+  height: 269px;
+  display: flex;
+}
+.demo-hero-banner-header {
+  color: rgb(193, 107, 107);
+  width: 280px;
+  height: 38px;
+  font-size: larger;
+}
+.demo-hero-banner-paragraph {
+  width: 284px;
+  height: 100px;
+  overflow: hidden;
+  font-size: 0.8em;
+  max-height: 100px;
+}
+.demo-hero-banner-link {
+  width: 151px;
+  border: 1px dashed rgb(187, 187, 187);
+  height: 75px;
+  display: flex;
+  overflow: hidden;
+  font-size: 0.8em;
+  min-width: 30px;
+  max-height: 100%;
+  min-height: 75px;
+  align-items: left;
+  padding-left: 5px;
+  border-radius: 3px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #FFFFFF00;
+  -webkit-user-drag: none;
+}
