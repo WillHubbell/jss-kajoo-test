@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React from 'react'
-import { Container, Header, Paragraph, Link } from '../../lib/bundle_sitecore.js'
+import { Container, Header, Paragraph, Link, Linebreak } from '../../lib/bundle_sitecore.js'
 import PropTypes from 'prop-types'
 
 import './quick-dmeo.css'
@@ -9,19 +9,25 @@ const QuickDmeo = (props) => {
   return (
     <Container className="quick-dmeo-container">
       <Container
-        bgImage={props.fields.bgImage_object_1633015457655}
+        bgImage={props.fields.bgImage_object_1633015813218}
         className="quick-dmeo-container1"
       >
-        <Header
-          text={props.fields.text_string_1633015467353}
-          className="quick-dmeo-header"
-        ></Header>
-        <Paragraph
-          text={props.fields.text_string_1633015482489}
-          className="quick-dmeo-paragraph"
-        ></Paragraph>
-        <Link href={props.fields.href_object_1633015500993} className="quick-dmeo-link"></Link>
+        <Container
+          bgImage={props.fields.bgImage_object_1633015457655}
+          className="quick-dmeo-container2"
+        >
+          <Header
+            text={props.fields.text_string_1633015467353}
+            className="quick-dmeo-header"
+          ></Header>
+          <Paragraph
+            text={props.fields.text_string_1633015482489}
+            className="quick-dmeo-paragraph"
+          ></Paragraph>
+          <Link href={props.fields.href_object_1633015500993} className="quick-dmeo-link"></Link>
+        </Container>
       </Container>
+      <Linebreak className="quick-dmeo-linebreak"></Linebreak>
     </Container>
   )
 }
