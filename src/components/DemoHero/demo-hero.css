@@ -2,9 +2,15 @@
 .demo-hero-container {
   display: flex;
   flex-wrap: wrap;
+  min-width: 30px;
   align-items: flex-start;
-  flex-direction: column;
+  border-color: rgb(187, 187, 187);
+  border-style: none;
+  border-width: 0px;
+  border-radius: 3px;
+  flex-direction: row;
   justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.05);
 }
 .demo-hero-container1 {
   display: flex;
