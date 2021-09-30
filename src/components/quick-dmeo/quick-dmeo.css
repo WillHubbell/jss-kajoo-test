@@ -8,6 +8,7 @@
   width: 715px;
   height: 324px;
   display: flex;
+  background-image: none;
 }
 .quick-dmeo-header {
   color: rgb(193, 107, 107);

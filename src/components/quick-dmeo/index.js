@@ -34,6 +34,7 @@ QuickDmeo.defaultProps = {
   'fields.text_string_1633015482489':
     'Skate ipsum dolor sit amet, carve shoveit steps Jordan Richter pressure flip late. Betty fast plant ollie regular footed method air. Tailslide airwalk nosebone concave Saran Wrap. Berm nollie snake fakie out concave H-Street. Vans fast plant blunt pogo yeah layback. Thunder steps trucks rock and roll Saran Wrap vert. Mini ramp speed wobbles bruised heel bigspin wax The Faction. Pop shove-it Chris Pastras rail coffin concave feeble. Handplant masonite goofy footed tuna-flip rip grip. Ollie World Industries transition kick-nose indy grab dude. Rail melancholy nose bump nosepicker tuna-flip Ron Chapman. Sponsored baseplate varial blunt manual.',
   'fields.href_object_1633015500993': '#',
+  'fields.bgImage_object_1633015813218': '',
 }
 
 QuickDmeo.propTypes = {
@@ -43,6 +44,7 @@ QuickDmeo.propTypes = {
   'fields.text_string_1633015467353': PropTypes.string,
   'fields.text_string_1633015482489': PropTypes.string,
   'fields.href_object_1633015500993': PropTypes.object,
+  'fields.bgImage_object_1633015813218': PropTypes.object,
 }
 
 export default QuickDmeo
