@@ -47,7 +47,6 @@ DemoHeroBanner.defaultProps = {
   fields: {},
   'fields.bgImage_object_1632853328540': '',
   'fields.bgImage_object_1632924845475': '',
-  'fields.bgImage_object_1632924850070': '',
   'fields.bgImage_object_1632924888050': '',
   'fields.text_string_1632924912094': 'HEADER',
   'fields.text_string_1632924929060':
@@ -60,7 +59,6 @@ DemoHeroBanner.propTypes = {
   fields: PropTypes.object,
   'fields.bgImage_object_1632853328540': PropTypes.object,
   'fields.bgImage_object_1632924845475': PropTypes.object,
-  'fields.bgImage_object_1632924850070': PropTypes.object,
   'fields.bgImage_object_1632924888050': PropTypes.object,
   'fields.text_string_1632924912094': PropTypes.string,
   'fields.text_string_1632924929060': PropTypes.string,

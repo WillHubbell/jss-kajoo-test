@@ -17,10 +17,6 @@ export default function (manifest) {
       type: CommonFieldTypes.Image,
       standardValue: ""
     }, {
-      name: "bgImage_object_1632924850070",
-      type: CommonFieldTypes.Image,
-      standardValue: ""
-    }, {
       name: "bgImage_object_1632924888050",
       type: CommonFieldTypes.Image,
       standardValue: ""
