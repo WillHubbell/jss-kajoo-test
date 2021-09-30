@@ -1,0 +1,126 @@
+/* eslint-disable */
+.demo-hero-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.demo-hero-container1 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  min-width: 30px;
+  align-items: flex-start;
+  margin-left: auto;
+  border-color: rgb(187, 187, 187);
+  border-style: none;
+  border-width: 0px;
+  margin-right: auto;
+  border-radius: 3px;
+  flex-direction: row;
+  background-size: cover;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url(https://qa-app.kajoo.ca/graphics/default.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.demo-hero-container2 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  min-width: 30px;
+  flex-basis: 75%;
+  align-items: flex-start;
+  border-color: rgb(187, 187, 187);
+  border-style: none;
+  border-width: 0px;
+  border-radius: 3px;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.demo-hero-header {
+  width: 184px;
+  height: 35px;
+  display: flex;
+  font-size: larger;
+  max-width: 100%;
+  min-width: 30px;
+  max-height: 100%;
+  align-items: center;
+  border-color: rgb(187, 187, 187);
+  border-style: none;
+  border-width: 0px;
+  border-radius: 3px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #FFFFFF00;
+  -webkit-user-drag: none;
+}
+.demo-hero-paragraph {
+  width: 262px;
+  height: 100px;
+  display: flex;
+  overflow: hidden;
+  font-size: 0.8em;
+  max-width: 100%;
+  min-width: 30px;
+  max-height: 100%;
+  align-items: left;
+  border-color: rgb(187, 187, 187);
+  border-style: none;
+  border-width: 0px;
+  padding-left: 3px;
+  border-radius: 5px;
+  flex-direction: column;
+  background-color: #FFFFFF00;
+  -webkit-user-drag: none;
+}
+.demo-hero-link {
+  width: 125px;
+  height: 75px;
+  display: flex;
+  overflow: hidden;
+  font-size: 0.8em;
+  max-width: 100%;
+  min-width: 30px;
+  align-self: center;
+  max-height: 100%;
+  align-items: left;
+  border-color: rgb(187, 187, 187);
+  border-style: none;
+  border-width: 0px;
+  padding-left: 5px;
+  border-radius: 3px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #FFFFFF00;
+  -webkit-user-drag: none;
+}
+.demo-hero-linebreak {
+  width: 124px;
+  height: 20px;
+  display: flex;
+  max-width: 100%;
+  min-width: 30px;
+  align-self: flex-start;
+  align-items: center;
+  border-color: rgb(187, 187, 187);
+  border-style: none;
+  border-width: 0px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #FFFFFF00;
+}
+@media(max-width: 600px) {
+  .demo-hero-container1 {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+  .demo-hero-linebreak {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
