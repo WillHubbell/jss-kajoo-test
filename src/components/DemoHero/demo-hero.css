@@ -17,6 +17,7 @@
   flex-wrap: wrap;
   max-width: 100%;
   min-width: 30px;
+  min-height: 300px;
   align-items: flex-start;
   margin-left: auto;
   border-color: rgb(187, 187, 187);
@@ -38,11 +39,13 @@
   max-width: 100%;
   min-width: 30px;
   flex-basis: 75%;
+  margin-top: auto;
   align-items: flex-start;
   border-color: rgb(187, 187, 187);
   border-style: none;
   border-width: 0px;
   border-radius: 3px;
+  margin-bottom: auto;
   flex-direction: row;
   justify-content: center;
   background-color: rgba(180, 178, 178, 255);
