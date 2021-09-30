@@ -3,7 +3,7 @@
 import "./bundle_sitecore.css"
 
 import React from 'react';
-import { Link as Link$1, Text as Text$1, Image as Image$1, isExperienceEditorActive } from '@sitecore-jss/sitecore-jss-react';
+import { Link as Link$1, Text as Text$1, Image as Image$1, RichText, isExperienceEditorActive } from '@sitecore-jss/sitecore-jss-react';
 import { PopupButton, Sidetab, Widget, SliderButton } from '@typeform/embed-react';
 
 function ownKeys(object, enumerableOnly) {
@@ -260,7 +260,7 @@ var Paragraph = function Paragraph(_ref) {
       text = _ref.text,
       rest = _objectWithoutProperties(_ref, _excluded$2);
 
-  return /*#__PURE__*/React.createElement(Text$1, _extends({
+  return /*#__PURE__*/React.createElement(RichText, _extends({
     tag: tag || 'p',
     field: text
   }, rest));
