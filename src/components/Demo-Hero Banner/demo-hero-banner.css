@@ -21,11 +21,19 @@
   height: 436px;
   display: flex;
   align-self: flex-end;
+  background-size: cover;
+  background-image: url(https://qa-app.kajoo.ca/graphics/default.png);
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .demo-hero-banner-container4 {
   width: 533px;
   height: 269px;
   display: flex;
+  background-size: cover;
+  background-image: url(https://qa-app.kajoo.ca/graphics/default.png);
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .demo-hero-banner-header {
   color: rgb(193, 107, 107);
