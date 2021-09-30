@@ -1,0 +1,65 @@
+/* eslint-disable */
+.yusuf-test-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(https://qa-app.kajoo.ca/graphics/default.png);
+  background-position: left top;
+}
+.yusuf-test-header {
+  color: rgb(193, 107, 107);
+  width: 257px;
+  height: 72px;
+  font-size: larger;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.yusuf-test-paragraph {
+  color: rgba(139, 0, 77, 255);
+  width: 222px;
+  height: 72px;
+  overflow: hidden;
+  font-size: 0.8em;
+  max-width: 100%;
+  max-height: 100px;
+  align-items: center;
+  border-style: solid;
+  justify-content: center;
+  background-color: rgba(127, 0, 129, 255);
+}
+.yusuf-test-link {
+  width: 124px;
+  border: 1px dashed rgb(187, 187, 187);
+  height: 75px;
+  display: flex;
+  overflow: hidden;
+  font-size: 0.8em;
+  max-width: 100%;
+  min-width: 30px;
+  align-self: flex-start;
+  max-height: 100%;
+  min-height: 75px;
+  align-items: center;
+  padding-left: 5px;
+  border-radius: 3px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #FFFFFF00;
+  -webkit-user-drag: none;
+}
+@media(max-width: 600px) {
+  .yusuf-test-header {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+  .yusuf-test-paragraph {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+  .yusuf-test-link {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
