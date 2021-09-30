@@ -130,12 +130,12 @@ var Button = function Button(_ref) {
 };
 
 var react$3 = function react(props) {
-  return /*#__PURE__*/React.createElement('div', {
+  return /*#__PURE__*/React.createElement("div", {
     className: props.className
-  }, [/*#__PURE__*/React.createElement('input', {
-    type: 'checkbox',
-    checked: 'true'
-  })]);
+  }, /*#__PURE__*/React.createElement("input", {
+    type: "checkbox",
+    checked: true
+  }));
 };
 
 var _excluded$8 = ["bgImage", "style", "children"];
@@ -149,7 +149,7 @@ var Container = function Container(_ref) {
       children = _ref.children,
       rest = _objectWithoutProperties(_ref, _excluded$8);
 
-  var backgroundImage = bgImage === null || bgImage === void 0 ? void 0 : (_bgImage$value = bgImage.value) === null || _bgImage$value === void 0 ? void 0 : _bgImage$value.url;
+  var backgroundImage = bgImage === null || bgImage === void 0 ? void 0 : (_bgImage$value = bgImage.value) === null || _bgImage$value === void 0 ? void 0 : _bgImage$value.src;
   var containerStyle = backgroundImage ? _objectSpread2(_objectSpread2({}, style), {}, {
     backgroundImage: "url(".concat(backgroundImage, ")")
   }) : style;
@@ -206,12 +206,12 @@ var Link = function Link(_ref) {
 };
 
 var react$1 = function react(props) {
-  return /*#__PURE__*/React.createElement('div', {
+  return /*#__PURE__*/React.createElement("div", {
     className: props.className
-  }, [/*#__PURE__*/React.createElement('input', {
-    type: 'radio',
-    name: 'radio'
-  })]);
+  }, /*#__PURE__*/React.createElement("input", {
+    type: "radio",
+    name: "radio"
+  }));
 };
 
 var _excluded$4 = ["text"];
@@ -269,25 +269,25 @@ var Paragraph = function Paragraph(_ref) {
 var s = {"dropbtn":"dropdown-module_dropbtn__3zFAg","dropdown":"dropdown-module_dropdown__33CIU","dropdownContent":"dropdown-module_dropdownContent__1iX_q"};
 
 var react = function react(props) {
-  return /*#__PURE__*/React.createElement('div', {
+  return /*#__PURE__*/React.createElement("div", {
     className: "".concat(props.className, " ").concat(s.dropdown)
-  }, [/*#__PURE__*/React.createElement('button', {
+  }, /*#__PURE__*/React.createElement("button", {
     className: s.dropbtn,
     style: {
       width: '100%',
       height: '100%'
     }
-  }, [Text$1({
+  }, /*#__PURE__*/React.createElement(Text$1, {
     field: props.text,
     editable: true,
     encode: true
-  })]), /*#__PURE__*/React.createElement('div', {
+  })), /*#__PURE__*/React.createElement("div", {
     className: s.dropdownContent
-  }, [/*#__PURE__*/React.createElement('div', null, [props.list && props.list.map(function (item, index) {
-    return /*#__PURE__*/React.createElement('div', {
+  }, /*#__PURE__*/React.createElement("div", null, props.list && props.list.map(function (item, index) {
+    return /*#__PURE__*/React.createElement("div", {
       key: 'listItem-' + index
-    }, [/*#__PURE__*/React.createElement('span', null, [item.name])]);
-  })])])]);
+    }, /*#__PURE__*/React.createElement("span", null, item.name));
+  }))));
 };
 
 var _excluded$1 = ["list"];
