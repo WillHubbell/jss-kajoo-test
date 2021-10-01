@@ -1,0 +1,59 @@
+/* eslint-disable */
+.big-hero-banner-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  justify-content: center;
+  background-image: url(https://qa-app.kajoo.ca/graphics/default.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.big-hero-banner-header {
+  width: 124px;
+  height: 72px;
+  display: flex;
+  font-size: larger;
+  max-width: 100%;
+  min-width: 30px;
+  max-height: 100%;
+  align-items: center;
+  font-family: Montserrat;
+  border-color: rgb(187, 187, 187);
+  border-style: none;
+  border-width: 0px;
+  border-radius: 3px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #FFFFFF00;
+  -webkit-user-drag: none;
+}
+.big-hero-banner-header1 {
+  width: 124px;
+  height: 72px;
+  display: flex;
+  font-size: 2.625em;
+  max-width: 100%;
+  min-width: 30px;
+  max-height: 100%;
+  align-items: center;
+  font-weight: bold;
+  border-color: rgba(51, 49, 51, 255);
+  border-style: none;
+  border-width: 0px;
+  border-radius: 3px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #FFFFFF00;
+  -webkit-user-drag: none;
+}
+@media(max-width: 600px) {
+  .big-hero-banner-header {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+  .big-hero-banner-header1 {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
