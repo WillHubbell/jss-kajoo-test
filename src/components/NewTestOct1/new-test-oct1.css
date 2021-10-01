@@ -4,6 +4,7 @@
   align-items: flex-start;
   flex-direction: row;
   justify-content: space-between;
+  background-image: none;
 }
 .new-test-oct1-image {
   width: 304px;
@@ -28,6 +29,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  background-image: none;
 }
 .new-test-oct1-header {
   color: rgb(193, 107, 107);
