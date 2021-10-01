@@ -24,6 +24,10 @@ export default function (manifest) {
       name: "href_object_1633097122400",
       type: CommonFieldTypes.GeneralLink,
       standardValue: "#"
+    }, {
+      name: "bgImage_object_1633097366732",
+      type: CommonFieldTypes.Image,
+      standardValue: ""
     }]
   });
 }
