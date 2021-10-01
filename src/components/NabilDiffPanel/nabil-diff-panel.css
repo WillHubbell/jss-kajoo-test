@@ -7,7 +7,6 @@
 }
 .nabil-diff-panel-image {
   width: 486px;
-  border: 1px solid #666666;
   height: 524px;
   display: flex;
   overflow: hidden;
@@ -16,6 +15,9 @@
   flex-basis: 50%;
   max-height: 100%;
   align-items: center;
+  border-color: #666666;
+  border-style: none;
+  border-width: 0px;
   border-radius: 3px;
   flex-direction: column;
   justify-content: center;
@@ -24,41 +26,72 @@
 .nabil-diff-panel-container1 {
   display: flex;
   max-width: 100%;
+  min-width: 30px;
   flex-basis: 50%;
   align-items: center;
-  flex-direction: column;
+  border-color: rgb(187, 187, 187);
+  border-style: none;
+  border-width: 0px;
+  border-radius: 3px;
+  flex-direction: row;
   justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.05);
 }
 .nabil-diff-panel-header {
-  color: rgb(193, 107, 107);
-  font-size: larger;
-  max-width: 100%;
-}
-.nabil-diff-panel-paragraph {
-  color: rgba(139, 0, 77, 255);
-  overflow: hidden;
-  font-size: 0.8em;
-  max-width: 100%;
-  max-height: 100px;
-  border-style: solid;
-  background-color: rgba(127, 0, 129, 255);
-}
-.nabil-diff-panel-button {
   width: 100px;
-  border: 1px solid #666666;
   height: 75px;
   display: flex;
-  font-size: 0.8em;
+  font-size: larger;
   max-width: 100%;
   min-width: 30px;
   max-height: 100%;
   align-items: center;
-  border-color: rgba(210, 69, 69, 1);
-  border-width: 1px;
+  border-color: rgb(187, 187, 187);
+  border-style: none;
+  border-width: 0px;
   border-radius: 3px;
   flex-direction: column;
   justify-content: center;
-  background-color: #d9d9d9;
+  background-color: #FFFFFF00;
+  -webkit-user-drag: none;
+}
+.nabil-diff-panel-paragraph {
+  width: 381px;
+  height: 131px;
+  display: flex;
+  overflow: hidden;
+  font-size: 0.8em;
+  max-width: 100%;
+  min-width: 30px;
+  max-height: 100%;
+  align-items: left;
+  border-color: rgb(187, 187, 187);
+  border-style: none;
+  border-width: 0px;
+  padding-left: 3px;
+  border-radius: 5px;
+  flex-direction: column;
+  background-color: #FFFFFF00;
+  -webkit-user-drag: none;
+}
+.nabil-diff-panel-button {
+  color: rgba(88, 122, 141, 255);
+  width: 378px;
+  height: 113px;
+  display: flex;
+  font-size: 0.9em;
+  max-width: nullpx;
+  min-width: 30px;
+  max-height: 35px;
+  align-items: center;
+  font-family: Amiri;
+  border-color: rgba(88, 122, 141, 255);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 1px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 1);
   -webkit-user-drag: none;
 }
 @media(max-width: 600px) {
