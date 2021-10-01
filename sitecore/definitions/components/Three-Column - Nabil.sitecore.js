@@ -47,7 +47,7 @@ export default function (manifest) {
     }, {
       name: "formId_string_1633101388217",
       type: CommonFieldTypes.SingleLineText,
-      standardValue: ""
+      standardValue: "Jgy4zwGT"
     }, {
       name: "mode_string_1633101388217",
       type: CommonFieldTypes.SingleLineText,
@@ -55,10 +55,6 @@ export default function (manifest) {
     }, {
       name: "buttonText_string_1633101388217",
       type: CommonFieldTypes.SingleLineText,
-      standardValue: ""
-    }, {
-      name: "bgImage_object_1633101832080",
-      type: CommonFieldTypes.Image,
       standardValue: ""
     }]
   });

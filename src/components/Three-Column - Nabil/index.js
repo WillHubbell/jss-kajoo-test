@@ -9,10 +9,7 @@ const ThreeColumnNabil = (props) => {
   return (
     <Container className="three-column-nabil-container">
       <Container className="three-column-nabil-container1">
-        <Container
-          bgImage={props.fields.bgImage_object_1633101832080}
-          className="three-column-nabil-container2"
-        >
+        <Container className="three-column-nabil-container2">
           <Image src={props.fields.src_object_1} className="three-column-nabil-image"></Image>
           <Header text={props.fields.text_string_7} className="three-column-nabil-header"></Header>
           <Paragraph
@@ -62,10 +59,9 @@ ThreeColumnNabil.defaultProps = {
   'fields.text_string_7': 'HEADER',
   'fields.text_string_8': 'HEADER',
   'fields.bgImage_object_9': '',
-  'fields.formId_string_1633101388217': '',
+  'fields.formId_string_1633101388217': 'Jgy4zwGT',
   'fields.mode_string_1633101388217': 'widget',
   'fields.buttonText_string_1633101388217': '',
-  'fields.bgImage_object_1633101832080': '',
 }
 
 ThreeColumnNabil.propTypes = {
@@ -83,7 +79,6 @@ ThreeColumnNabil.propTypes = {
   'fields.formId_string_1633101388217': PropTypes.string,
   'fields.mode_string_1633101388217': PropTypes.string,
   'fields.buttonText_string_1633101388217': PropTypes.string,
-  'fields.bgImage_object_1633101832080': PropTypes.object,
 }
 
 export default ThreeColumnNabil
