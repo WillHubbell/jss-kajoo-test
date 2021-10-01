@@ -9,33 +9,38 @@ const ThreeColumnNabil = (props) => {
   return (
     <Container className="three-column-nabil-container">
       <Container className="three-column-nabil-container1">
-        <Image src={props.fields.src_object_1} className="three-column-nabil-image"></Image>
-        <Image src={props.fields.src_object_2} className="three-column-nabil-image1"></Image>
-        <Image src={props.fields.src_object_0} className="three-column-nabil-image2"></Image>
-      </Container>
-      <Container className="three-column-nabil-container2">
-        <Header text={props.fields.text_string_7} className="three-column-nabil-header"></Header>
-        <Header text={props.fields.text_string_3} className="three-column-nabil-header1"></Header>
-        <Header text={props.fields.text_string_8} className="three-column-nabil-header2"></Header>
-      </Container>
-      <Container className="three-column-nabil-container3">
-        <Paragraph
-          text={props.fields.text_string_4}
-          className="three-column-nabil-paragraph"
-        ></Paragraph>
-        <Paragraph
-          text={props.fields.text_string_6}
-          className="three-column-nabil-paragraph1"
-        ></Paragraph>
-        <Paragraph
-          text={props.fields.text_string_5}
-          className="three-column-nabil-paragraph2"
-        ></Paragraph>
+        <Container
+          bgImage={props.fields.bgImage_object_1633101832080}
+          className="three-column-nabil-container2"
+        >
+          <Image src={props.fields.src_object_1} className="three-column-nabil-image"></Image>
+          <Header text={props.fields.text_string_7} className="three-column-nabil-header"></Header>
+          <Paragraph
+            text={props.fields.text_string_4}
+            className="three-column-nabil-paragraph"
+          ></Paragraph>
+        </Container>
+        <Container className="three-column-nabil-container3">
+          <Image src={props.fields.src_object_2} className="three-column-nabil-image1"></Image>
+          <Header text={props.fields.text_string_3} className="three-column-nabil-header1"></Header>
+          <Paragraph
+            text={props.fields.text_string_6}
+            className="three-column-nabil-paragraph1"
+          ></Paragraph>
+        </Container>
+        <Container className="three-column-nabil-container4">
+          <Image src={props.fields.src_object_0} className="three-column-nabil-image2"></Image>
+          <Header text={props.fields.text_string_8} className="three-column-nabil-header2"></Header>
+          <Paragraph
+            text={props.fields.text_string_5}
+            className="three-column-nabil-paragraph2"
+          ></Paragraph>
+        </Container>
       </Container>
       <TypeForm
-        formId={props.fields.formId_string_1633101729089}
-        mode={props.fields.mode_string_1633101729089}
-        buttonText={props.fields.buttonText_string_1633101729089}
+        formId={props.fields.formId_string_1633101388217}
+        mode={props.fields.mode_string_1633101388217}
+        buttonText={props.fields.buttonText_string_1633101388217}
         className="three-column-nabil-type-form"
       ></TypeForm>
     </Container>
@@ -57,9 +62,10 @@ ThreeColumnNabil.defaultProps = {
   'fields.text_string_7': 'HEADER',
   'fields.text_string_8': 'HEADER',
   'fields.bgImage_object_9': '',
-  'fields.formId_string_1633101729089': '',
-  'fields.mode_string_1633101729089': 'widget',
-  'fields.buttonText_string_1633101729089': '',
+  'fields.formId_string_1633101388217': '',
+  'fields.mode_string_1633101388217': 'widget',
+  'fields.buttonText_string_1633101388217': '',
+  'fields.bgImage_object_1633101832080': '',
 }
 
 ThreeColumnNabil.propTypes = {
@@ -74,9 +80,10 @@ ThreeColumnNabil.propTypes = {
   'fields.text_string_7': PropTypes.string,
   'fields.text_string_8': PropTypes.string,
   'fields.bgImage_object_9': PropTypes.object,
-  'fields.formId_string_1633101729089': PropTypes.string,
-  'fields.mode_string_1633101729089': PropTypes.string,
-  'fields.buttonText_string_1633101729089': PropTypes.string,
+  'fields.formId_string_1633101388217': PropTypes.string,
+  'fields.mode_string_1633101388217': PropTypes.string,
+  'fields.buttonText_string_1633101388217': PropTypes.string,
+  'fields.bgImage_object_1633101832080': PropTypes.object,
 }
 
 export default ThreeColumnNabil

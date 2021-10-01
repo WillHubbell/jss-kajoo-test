@@ -45,16 +45,20 @@ export default function (manifest) {
       type: CommonFieldTypes.Image,
       standardValue: ""
     }, {
-      name: "formId_string_1633101729089",
+      name: "formId_string_1633101388217",
       type: CommonFieldTypes.SingleLineText,
       standardValue: ""
     }, {
-      name: "mode_string_1633101729089",
+      name: "mode_string_1633101388217",
       type: CommonFieldTypes.SingleLineText,
       standardValue: "widget"
     }, {
-      name: "buttonText_string_1633101729089",
+      name: "buttonText_string_1633101388217",
       type: CommonFieldTypes.SingleLineText,
+      standardValue: ""
+    }, {
+      name: "bgImage_object_1633101832080",
+      type: CommonFieldTypes.Image,
       standardValue: ""
     }]
   });
